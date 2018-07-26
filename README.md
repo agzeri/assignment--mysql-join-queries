@@ -12,7 +12,7 @@ Help your manager to extract data and format it using join queries and MySQL fun
   cd ~/muktek/assignments
   mkdir assignment--mysql-join-queries
 
-  curl  https://raw.githubusercontent.com/muktek/assignment--mysql-join-queries/master/assignment-files/mysql-join-queries.sql > mysql-sub-queries.sql
+  curl  https://raw.githubusercontent.com/muktek/assignment--mysql-join-queries/master/assignment-files/mysql-join-queries.sql > mysql-join-queries.sql
   ```
 
 2. Connect to MySQL Server on [45.55.135.14/phpmyadmin](45.55.135.14/phpmyadmin) and create your a copy of the database under your name. NOTE: Format name of should be `HR_«your-github-name»`.
