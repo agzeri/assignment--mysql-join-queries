@@ -2,11 +2,55 @@
 
 ## The Assignment
 
-[POTUS](#) has hired you to solve this business questions about HR. He is really worry about people and and wants to know this information the faster that you can. He already promised you donuts and cafe for one year.
+Help your manager to extract data and format it using join queries and MySQL functions. The exercises are below.
 
-## Deliverables
+## Setup Instructions
 
-  + a github repository named `assignment--mysql-join-queries`
+1. Create assignment folder in terminal
+
+  ```sh
+  cd ~/muktek/assignments
+  mkdir assignment--mysql-join-queries
+
+  curl  https://raw.githubusercontent.com/muktek/assignment--mysql-join-queries/master/assignment-files/mysql-join-queries.sql > mysql-sub-queries.sql
+  ```
+
+2. Connect to MySQL Server on [45.55.135.14/phpmyadmin](45.55.135.14/phpmyadmin) and create your a copy of the database under your name. NOTE: Format name of should be `HR_«your-github-name»`.
+
+  ```sh
+  ssh root@45.55.135.14
+    # enter password when asked
+  ```
+
+
+3. Inside mysql shell, connect to your HR_ database to complete the exercises (you should have one already from the previous exercise)
+  ```sh
+  mysql> mysql -u root -p
+    # enter password when asked to
+
+  # enter your database
+  mysql> USE HR_yourGithubUsername
+  ```
+
+4. Check to see the tables are there
+
+  ```sh
+  mysql> SHOW TABLES;
+  # =>
+  +------------------------+
+  | Tables_in_HR_«yourGithubUsername» |
+  +------------------------+
+  | Countries              |
+  | Departments            |
+  | Employees              |
+  | JobHistory             |
+  | Jobs                   |
+  | Locations              |
+  | Regions                |
+  +------------------------+
+  ```
+
+4. You will need to write/record your queries in the `mysql-join-queries.sql` file
 
 ## Setup Instructions
 
@@ -42,6 +86,7 @@
 #  is currently drawing more than 10000 of salary.
 
 # 8 Write a query to display department name, full name (first_name, last_name),
-    hire date, salary of the manager for all managers whose experience
-    is more than 15 years.
+#    hire date, salary of the manager for all managers whose experience
+#    is more than 15 years.
+
 ```
